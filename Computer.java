@@ -4,6 +4,12 @@ public class Computer
     private boolean laptop;
     private int preis;
     
+    private Computer(String newHersteller, boolean newLaptop, int newPreis)
+    {
+     setHersteller(newHersteller);
+     setLaptop(newLaptop);
+     setPreis(newPreis);
+    }
     
     public void setHersteller(String newHersteller)
     {
