@@ -9,7 +9,7 @@ public class Computer
      * It is creating a new Instance of the class Computer.
      * 
      */
-    private Computer(String newHersteller, boolean newLaptop, int newPreis)
+    public Computer(String newHersteller, boolean newLaptop, int newPreis)
     {
      setHersteller(newHersteller);
      setLaptop(newLaptop);
@@ -27,6 +27,7 @@ public class Computer
         // set the property laptop to the value of the parameter newLaptop.
         laptop = newLaptop;
     }
+
     
     public void setPreis(int newPreis)
     {
@@ -48,4 +49,9 @@ public class Computer
     {
         return preis;
     }
-}
+    
+   public void printComputer()
+    {
+    System.out.println("Hersteller: " + hersteller + ", Laptop: " + laptop + ", Preis: " + preis + " Euro");
+    }
+   }
