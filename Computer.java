@@ -1,6 +1,6 @@
 public class Computer
 {
-    private String hersteller; // Eigenschaft der Name des Herstellers
+    private String hersteller; // Eigenschaft; Der Name des Herstellers
     private boolean laptop;     // Ob es Laptops gibt oder nicht (Ja oder Nein)
     private int preis;          // Wie viel es kostet
     
@@ -9,43 +9,45 @@ public class Computer
      * It is creating a new Instance of the class Computer.
      * 
      */
-    public Computer(String newHersteller, boolean newLaptop, int newPreis)
+    public Computer(String hersteller, boolean laptop, int preis)
     {
-     setHersteller(newHersteller);
-     setLaptop(newLaptop);
-     setPreis(newPreis);
+     setHersteller(hersteller);
+     setLaptop(laptop);
+     setPreis(preis);
     }
     
-    public void setHersteller(String newHersteller)
+    public Computer()
+    {
+     setHersteller("Intel");
+     setLaptop(true);
+     setPreis(2000);
+    }
+    
+    public void setHersteller(String hersteller)
     {
         // set the property hersteller to the value of the parameter newHersteller.
-        hersteller = newHersteller;
+        this.hersteller = hersteller;
     }
-    
-    public void setLaptop(boolean newLaptop)
+        public void setLaptop(boolean laptop)
     {
         // set the property laptop to the value of the parameter newLaptop.
-        laptop = newLaptop;
+        this.laptop = laptop;
     }
-
-    
-    public void setPreis(int newPreis)
+       public void setPreis(int preis)
     {
         // set the property preis to the value of the newPreis.
-        preis = newPreis;
+        this.preis = preis;
     }
     
     public String getHersteller()
     {
         return hersteller;
     }
-    
-    public boolean getLaptop()
+        public boolean getLaptop()
     {
         return laptop;
     }
-    
-    public int getPreis()
+        public int getPreis()
     {
         return preis;
     }
